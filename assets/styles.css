@@ -42,6 +42,35 @@ img{max-width:100%;display:block}
 .chip{display:inline-flex;align-items:center;gap:8px;background:var(--chip);border:1px solid var(--line);padding:6px 10px;border-radius:999px;color:#d4d4d8;font-size:.82rem}
 .chip-ico{width:16px;height:16px;opacity:.9}
 
+/* Code blocks */
+.code-block{ position:relative; margin-top:12px; }
+.code-title{ font-size:.9rem; color:#d4d4d8; margin:0 0 6px 2px; display:flex; align-items:center; gap:8px; }
+.code-snippet{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size:.95rem;
+  line-height:1.5;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:12px 12px 12px 14px;
+  background:#0b0b0b;
+  color:#e5e7eb;
+  white-space:pre;      /* keep exact formatting */
+  overflow:auto;        /* horizontal scroll if needed */
+}
+
+/* Copy button for code */
+.copy-btn{
+  border:1px solid var(--line);
+  background:#0f1115;
+  color:#e5e7eb;
+  font-size:.8rem;
+  padding:6px 10px;
+  border-radius:8px;
+  cursor:pointer;
+}
+.copy-btn:hover{ filter:brightness(1.05); }
+
+
 /* panels / tabs */
 .panel{margin-top:22px;border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--card)}
 .panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
