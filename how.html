@@ -17,6 +17,7 @@
       </div>
     </a>
     <nav class="links">
+      <a href="index.html">Home</a>
       <a class="active" href="how.html">How it works</a>
       <a href="contact.html" class="btn">Book a demo</a>
     </nav>
@@ -30,21 +31,23 @@
 
     <section class="steps">
       <article class="step">
-        <div class="num">1</div>
+        <img class="step-icon" src="assets/icons/api.svg" alt="">
         <div>
           <h3 class="h5">Enable Family Mode in your player</h3>
           <p class="muted">Our API provides the skip‑map and status; your player seeks past flagged segments automatically.</p>
         </div>
       </article>
+
       <article class="step">
-        <div class="num">2</div>
+        <img class="step-icon" src="assets/icons/profiles.svg" alt="">
         <div>
           <h3 class="h5">Choose a profile</h3>
           <p class="muted">Mild · Strict · Custom. Profiles are policy‑driven and context‑aware — not just keywords.</p>
         </div>
       </article>
+
       <article class="step">
-        <div class="num">3</div>
+        <img class="step-icon" src="assets/icons/measure.svg" alt="">
         <div>
           <h3 class="h5">Pilot, measure, scale</h3>
           <p class="muted">Start with a small title set, track engagement and complaints reduction, then expand.</p>
@@ -59,6 +62,17 @@
         <li>No catalog re‑encoding; we apply time‑based skips on playback.</li>
         <li>Viewer privacy respected; profiles are policy selections, not personal data.</li>
       </ul>
+      <pre class="code-snippet"><code>GET /v1/skipmap?asset_id=123&profile=strict
+200 OK
+{
+  "asset_id": "123",
+  "profile": "strict",
+  "skips": [{"start": 321.5, "end": 355.0}, ...]
+}</code></pre>
+
+      <div class="cta-wrapper">
+        <a class="btn cta" href="contact.html#book">Book a demo</a>
+      </div>
     </section>
   </main>
 
