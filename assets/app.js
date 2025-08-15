@@ -45,3 +45,47 @@ document.querySelectorAll('[data-copy]').forEach(btn => {
   });
 });
 
+// smooth scroll for in-page anchors
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (id.length > 1) {
+      const el = document.querySelector(id);
+      if (el) {
+        e.preventDefault();
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, "", id);
+      }
+    }
+  });
+});
+
+// simple AJAX submit for forms marked data-ajax
+document.querySelectorAll('form[data-ajax]').forEach(form => {
+  form.addEventListener('submit', async (e) => {
+    const ok = form.querySelector('.notice.ok');
+    const err = form.querySelector('.notice.err');
+    ok && ok.classList.add('hidden');
+    err && err.classList.add('hidden');
+
+    // Use Formspree (or similar) endpoint in action attribute.
+    // If you haven't set one yet, let it do normal POST/navigation.
+    if (!form.action || !/^https?:\/\//.test(form.action)) return;
+
+    e.preventDefault();
+    const data = new FormData(form);
+    try {
+      const res = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' }});
+      if (res.ok) {
+        ok && ok.classList.remove('hidden');
+        form.reset();
+      } else {
+        err && err.classList.remove('hidden');
+      }
+    } catch {
+      err && err.classList.remove('hidden');
+    }
+  });
+});
+
+
