@@ -1,47 +1,102 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SmartSkips – Stream Freely. Skip Wisely.</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #111;
-      color: #fff;
-      text-align: center;
-    }
-    header {
-      padding: 50px 20px;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: auto;
-    }
-    footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-  </style>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>SmartSkips — Stream Freely. Skip Wisely.</title>
+  <meta name="description" content="SmartSkips by HazeCraft Tech — AI-powered Family Mode for OTT: skip sensitive scenes seamlessly without re-encoding or new apps."/>
+  <link rel="stylesheet" href="assets/styles.css"/>
 </head>
 <body>
-  <header>
-    <h1>SmartSkips</h1>
-    <h2>Stream Freely. Skip Wisely.</h2>
-    <p>A HazeCraft Tech product bringing AI‑powered content filtering to your streaming experience.</p>
+  <header class="nav">
+    <a class="brand" href="index.html">
+      <div class="logo">SS</div>
+      <div class="brandtext">
+        <strong>SmartSkips</strong>
+        <span class="muted">A HazeCraft Tech Product</span>
+      </div>
+    </a>
+    <nav class="links">
+      <a href="how.html">How it works</a>
+      <a href="contact.html" class="btn">Book a demo</a>
+    </nav>
   </header>
-  <footer>
-    &copy; 2025 HazeCraft Tech Inc. All rights reserved.
+
+  <main class="container">
+    <section class="hero">
+      <h1>Stream Freely. <span class="fade">Skip Wisely.</span></h1>
+      <p class="lead">
+        SmartSkips is an AI‑powered Family Mode for streaming platforms.
+        It automatically skips sensitive scenes while keeping the story flowing —
+        no re‑encoding, no manual review, no new app for your users.
+      </p>
+      <div class="chips">
+        <span class="chip">Profiles: Mild · Strict · Custom</span>
+        <span class="chip">Policy‑driven</span>
+        <span class="chip">Drop‑in integration</span>
+        <span class="chip">Works with your player</span>
+      </div>
+    </section>
+
+    <!-- Video block with Teaser / Raw tabs -->
+    <section class="panel" id="demo">
+      <div class="panel-head">
+        <h2 class="h4">See it in action</h2>
+        <div class="tabs">
+          <button class="tab active" data-target="#teaserPane">Teaser</button>
+          <button class="tab" data-target="#rawPane">Raw screen‑capture</button>
+        </div>
+      </div>
+
+      <!-- Teaser (use Unlisted YouTube or MP4) -->
+      <div id="teaserPane" class="pane" style="display:block">
+        <!-- Option A: YouTube embed (safest for public) -->
+        <!-- <div class="ratio">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID?rel=0&modestbranding=1&controls=1"
+                  title="SmartSkips teaser" frameborder="0"
+                  allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+        <!-- Option B: direct MP4 (hosted) -->
+        <video controls playsinline preload="metadata" poster="assets/teaser-poster.jpg"
+               class="player" controlsList="nodownload">
+          <source src="TEASER_SIGNED_URL.mp4" type="video/mp4"/>
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+
+      <!-- Raw (S3/CloudFront signed URL — expiring) -->
+      <div id="rawPane" class="pane">
+        <video controls playsinline preload="metadata" poster="assets/raw-poster.jpg"
+               class="player" controlsList="nodownload">
+          <source src="RAW_SIGNED_URL.mp4" type="video/mp4"/>
+        </video>
+        <p class="micro muted" style="margin-top:8px">
+          Watermark recommended. Use expiring signed URLs.
+        </p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3 class="h5">Protect your brand & audience</h3>
+        <p class="muted">Deliver a family‑safe mode instantly without splitting your catalog or adding editorial overhead.</p>
+      </div>
+      <div class="card">
+        <h3 class="h5">Frictionless viewer experience</h3>
+        <p class="muted">Seamless skips that don’t break the story. Simple profile switch: Mild · Strict · Custom.</p>
+      </div>
+      <div class="card">
+        <h3 class="h5">Fast to pilot</h3>
+        <p class="muted">Start with our API and your existing player workflow. No re‑encoding, no app changes.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="muted">© <span id="year"></span> HazeCraft Tech Inc.</span>
+    <a href="mailto:demo@hazecrafttech.com" class="muted">demo@hazecrafttech.com</a>
   </footer>
+
+  <script src="assets/app.js"></script>
 </body>
 </html>
-```
