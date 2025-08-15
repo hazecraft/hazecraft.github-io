@@ -42,6 +42,19 @@ img{max-width:100%;display:block}
 .chip{display:inline-flex;align-items:center;gap:8px;background:var(--chip);border:1px solid var(--line);padding:6px 10px;border-radius:999px;color:#d4d4d8;font-size:.82rem}
 .chip-ico{width:16px;height:16px;opacity:.9}
 
+/* Buttons: ensure readable text + slight contrast bump */
+.btn{ color:#e5e7eb; }
+
+/* Contact form notices */
+.hidden{ display:none; }
+.notice{ margin-top:10px; padding:10px 12px; border-radius:10px; font-size:.9rem; }
+.notice.ok{ border:1px solid #14532d; background:#052e1a; color:#c7f9cc; }
+.notice.err{ border:1px solid #7f1d1d; background:#2a0d0d; color:#fecaca; }
+
+/* Make form controls a bit brighter on dark panels */
+.contact-form input,.contact-form textarea{ background:#0f0f10; }
+
+
 /* Code blocks */
 .code-block{ position:relative; margin-top:12px; }
 .code-title{ font-size:.9rem; color:#d4d4d8; margin:0 0 6px 2px; display:flex; align-items:center; gap:8px; }
