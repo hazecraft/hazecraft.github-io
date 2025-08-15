@@ -79,10 +79,16 @@
         <li>Contact-center analytics: summarization, topic tagging, redaction.</li>
         <li>Document intelligence: extraction, search, retrieval-augmented generation.</li>
       </ul>
-      <pre class="code-snippet"><code># Minimal pattern: API-first MVP
-POST /predict
+      <div class="code-block">
+  <div class="code-title">
+    # Minimal pattern: API-first MVP
+    <button class="copy-btn" data-copy="#ai-snippet">Copy</button>
+  </div>
+  <pre id="ai-snippet" class="code-snippet">POST /predict
 Request: {"features": {...}}
-Response: {"score": 0.87, "explanation": {"top_features": ["x1","x5"]}}</code></pre>
+Response: {"score": 0.87, "explanation": {"top_features": ["x1","x5"]}}</pre>
+</div>
+
     </section>
 
     <!-- Engagement model -->
