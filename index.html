@@ -17,24 +17,31 @@
       </div>
     </a>
     <nav class="links">
+      <a class="active" href="index.html">Home</a>
       <a href="how.html">How it works</a>
       <a href="contact.html" class="btn">Book a demo</a>
     </nav>
   </header>
 
   <main class="container">
-    <section class="hero">
-      <h1>Stream Freely. <span class="fade">Skip Wisely.</span></h1>
-      <p class="lead">
-        SmartSkips is an AI‑powered Family Mode for streaming platforms.
-        It automatically skips sensitive scenes while keeping the story flowing —
-        no re‑encoding, no manual review, no new app for your users.
-      </p>
-      <div class="chips">
-        <span class="chip">Profiles: Mild · Strict · Custom</span>
-        <span class="chip">Policy‑driven</span>
-        <span class="chip">Drop‑in integration</span>
-        <span class="chip">Works with your player</span>
+    <section class="hero hero-with-bg">
+      <div class="hero-content">
+        <h1>Stream Freely. <span class="fade">Skip Wisely.</span></h1>
+        <p class="lead">
+          SmartSkips is an AI‑powered Family Mode for streaming platforms.
+          It automatically skips sensitive scenes while keeping the story flowing —
+          no re‑encoding, no manual review, no new app for your users.
+        </p>
+        <div class="cta-row">
+          <a class="btn cta" href="contact.html#book">Book a 15‑minute demo</a>
+          <a class="btn ghost" href="#demo">Watch teaser</a>
+        </div>
+        <div class="chips">
+          <span class="chip"><img class="chip-ico" src="assets/icons/profiles.svg" alt="">Profiles: Mild · Strict · Custom</span>
+          <span class="chip"><img class="chip-ico" src="assets/icons/policy.svg" alt="">Policy‑driven</span>
+          <span class="chip"><img class="chip-ico" src="assets/icons/dropin.svg" alt="">Drop‑in integration</span>
+          <span class="chip"><img class="chip-ico" src="assets/icons/player.svg" alt="">Works with your player</span>
+        </div>
       </div>
     </section>
 
@@ -48,15 +55,17 @@
         </div>
       </div>
 
-      <!-- Teaser (use Unlisted YouTube or MP4) -->
+      <!-- Teaser (YouTube or hosted MP4) -->
       <div id="teaserPane" class="pane" style="display:block">
-        <!-- Option A: YouTube embed (safest for public) -->
-        <!-- <div class="ratio">
+        <!-- Option A: YouTube embed -->
+        <!--
+        <div class="ratio">
           <iframe src="https://www.youtube.com/embed/VIDEO_ID?rel=0&modestbranding=1&controls=1"
                   title="SmartSkips teaser" frameborder="0"
                   allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
-        </div> -->
-        <!-- Option B: direct MP4 (hosted) -->
+        </div>
+        -->
+        <!-- Option B: direct MP4 -->
         <video controls playsinline preload="metadata" poster="assets/teaser-poster.jpg"
                class="player" controlsList="nodownload">
           <source src="TEASER_SIGNED_URL.mp4" type="video/mp4"/>
@@ -78,25 +87,14 @@
 
     <section class="grid">
       <div class="card">
+        <img class="card-icon" src="assets/icons/protect.svg" alt="">
         <h3 class="h5">Protect your brand & audience</h3>
         <p class="muted">Deliver a family‑safe mode instantly without splitting your catalog or adding editorial overhead.</p>
       </div>
       <div class="card">
+        <img class="card-icon" src="assets/icons/seamless.svg" alt="">
         <h3 class="h5">Frictionless viewer experience</h3>
         <p class="muted">Seamless skips that don’t break the story. Simple profile switch: Mild · Strict · Custom.</p>
       </div>
       <div class="card">
-        <h3 class="h5">Fast to pilot</h3>
-        <p class="muted">Start with our API and your existing player workflow. No re‑encoding, no app changes.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <span class="muted">© <span id="year"></span> HazeCraft Tech Inc.</span>
-    <a href="mailto:demo@hazecrafttech.com" class="muted">demo@hazecrafttech.com</a>
-  </footer>
-
-  <script src="assets/app.js"></script>
-</body>
-</html>
+        <img class="card-icon" src="ass
