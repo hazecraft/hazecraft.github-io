@@ -80,3 +80,18 @@ img{max-width:100%;display:block}
 
 /* footer */
 .footer{margin-top:24px;padding:16px 20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;color:var(--muted)}
+
+/* Brand/header (keep from previous fix) */
+.brand{display:flex;align-items:center;gap:12px}
+.logo{flex:0 0 40px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25));border-radius:12px}
+.brandtext{display:flex;flex-direction:column;gap:2px;line-height:1}
+.brandname{font-weight:800;font-size:1.05rem;letter-spacing:-0.2px;color:#fff}
+.tagline{font-weight:500;font-size:.9rem;letter-spacing:.25px;color:var(--muted);opacity:.9}
+.links{display:flex;align-items:center;gap:16px}
+.links a.active{text-decoration:underline}
+.hide-on-mobile{display:none}
+@media (min-width:640px){ .hide-on-mobile{display:inline} }
+
+/* Pills/badges */
+.pill{display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid var(--line);background:#0f1115;font-size:.78rem;margin-left:6px}
+
