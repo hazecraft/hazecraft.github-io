@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>SmartSkips — Book a Demo</title>
+  <meta name="description" content="Book a 15-minute demo of SmartSkips by HazeCraft Tech.">
+  <link rel="stylesheet" href="../../assets/styles.css"/>
+  <link rel="preconnect" href="https://assets.calendly.com">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="../../index.html" aria-label="HazeCraft home">
+      <!-- HazeCraft brand mark -->
+      <svg class="logo" width="40" height="40" viewBox="0 0 48 48" role="img" aria-label="HazeCraft">
+        <defs><linearGradient id="grad-hc" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#60a5fa"/><stop offset="100%" stop-color="#818cf8"/></linearGradient></defs>
+        <rect x="2.5" y="2.5" width="43" height="43" rx="12" fill="url(#grad-hc)"/>
+        <circle cx="17" cy="24" r="6.5" fill="#0b1020" opacity=".95"/>
+        <rect x="25" y="17" width="6" height="14" rx="3" fill="#0b1020" opacity=".95"/>
+        <rect x="33.5" y="20.5" width="5" height="8" rx="2.5" fill="#9FE1C8" opacity=".95"/>
+      </svg>
+      <div class="brandtext">
+        <span class="brandname">HazeCraft Tech</span>
+        <span class="tagline">Product: <strong>SmartSkips</strong></span>
+      </div>
+    </a>
+    <nav class="links">
+      <a href="../../index.html" class="hide-on-mobile">Home</a>
+      <a href="../../services-cloud-aks.html">Cloud & AKS</a>
+      <a href="../../services-ai.html">AI/ML</a>
+      <a class="active" href="./">SmartSkips</a>
+      <a href="../../contact.html" class="btn">Company Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <nav class="micro muted" style="margin:6px 0 2px">
+      HazeCraft / Products / <strong>SmartSkips</strong> / Contact
+    </nav>
+
+    <section class="hero compact">
+      <h1>Book a SmartSkips Demo</h1>
+      <p class="lead">See SmartSkips in action, talk integration, and plan a small-title pilot.</p>
+    </section>
+
+    <section class="panel" id="book">
+      <h2 class="h5">Pick a slot</h2>
+      <!-- Replace with your real Calendly link -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/your-account/15min" style="min-width:320px;height:640px;"></div>
+      <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </section>
+
+    <section class="panel">
+      <h2 class="h5">Email</h2>
+      <p><a href="mailto:demo@hazecrafttech.com">demo@hazecrafttech.com</a></p>
+    </section>
+
+    <section class="panel">
+      <h2 class="h5">Send a message</h2>
+      <!-- Replace action with your Formspree (or similar) endpoint -->
+      <form action="https://formspree.io/f/yourID" method="POST" class="contact-form">
+        <div class="row">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="_replyto" placeholder="Email" required>
+        </div>
+        <textarea name="message" placeholder="How can we help?" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="../../index.html" class="muted">HazeCraft</a>
+    <span class="muted">© <span id="year"></span> HazeCraft Tech Inc.</span>
+    <a href="mailto:demo@hazecrafttech.com" class="muted">demo@hazecrafttech.com</a>
+  </footer>
+
+  <script src="../../assets/app.js"></script>
+</body>
+</html>
