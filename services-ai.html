@@ -10,14 +10,8 @@
 <body>
   <header class="nav">
     <a class="brand" href="index.html" aria-label="HazeCraft home">
-      <!-- HazeCraft brand mark -->
       <svg class="logo" width="40" height="40" viewBox="0 0 48 48" role="img" aria-label="HazeCraft">
-        <defs>
-          <linearGradient id="grad-hc" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%"  stop-color="#60a5fa"/>
-            <stop offset="100%" stop-color="#818cf8"/>
-          </linearGradient>
-        </defs>
+        <defs><linearGradient id="grad-hc" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#60a5fa"/><stop offset="100%" stop-color="#818cf8"/></linearGradient></defs>
         <rect x="2.5" y="2.5" width="43" height="43" rx="12" fill="url(#grad-hc)"/>
         <circle cx="17" cy="24" r="6.5" fill="#0b1020" opacity=".95"/>
         <rect x="25" y="17" width="6" height="14" rx="3" fill="#0b1020" opacity=".95"/>
@@ -33,7 +27,7 @@
       <a href="services-cloud-aks.html">Cloud & AKS</a>
       <a class="active" href="services-ai.html">AI/ML</a>
       <a href="products/smartskips/">SmartSkips</a>
-      <a href="contact.html" class="btn">Contact</a>
+      <a href="#contact" class="btn">Contact</a>
     </nav>
   </header>
 
@@ -53,7 +47,6 @@
       </div>
     </section>
 
-    <!-- What we do -->
     <section class="grid">
       <div class="card">
         <h3 class="h5">Problem Framing & Data Readiness</h3>
@@ -69,7 +62,6 @@
       </div>
     </section>
 
-    <!-- Example solutions -->
     <section class="panel">
       <div class="panel-head"><h2 class="h4">Example solutions</h2></div>
       <ul class="muted">
@@ -80,48 +72,11 @@
         <li>Document intelligence: extraction, search, retrieval-augmented generation.</li>
       </ul>
       <div class="code-block">
-  <div class="code-title">
-    # Minimal pattern: API-first MVP
-    <button class="copy-btn" data-copy="#ai-snippet">Copy</button>
-  </div>
-  <pre id="ai-snippet" class="code-snippet">POST /predict
+        <div class="code-title"># Minimal pattern: API-first MVP</div>
+        <pre id="ai-snippet" class="code-snippet">POST /predict
 Request: {"features": {...}}
 Response: {"score": 0.87, "explanation": {"top_features": ["x1","x5"]}}</pre>
-</div>
-
-    </section>
-
-    <!-- Engagement model -->
-    <section class="steps">
-      <article class="step">
-        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="#c1f0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 7h6v10H4zM14 7h6M14 12h6M14 17h6"></path>
-        </svg>
-        <div>
-          <h3 class="h5">1) Discovery</h3>
-          <p class="muted">Workshops to select 1–2 tractable use cases with clear KPIs and data viability.</p>
-        </div>
-      </article>
-      <article class="step">
-        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="#aeb3ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="8" cy="8" r="3"></circle><circle cx="16" cy="8" r="3"></circle>
-          <path d="M2 20c0-3 4-5 6-5s6 2 6 5"></path>
-          <path d="M14 20c0-2 3-4 5-4 1.2 0 2.4.4 3 1"></path>
-        </svg>
-        <div>
-          <h3 class="h5">2) Pilot</h3>
-          <p class="muted">Ship a thin slice to a real user or dataset; measure adoption and business impact.</p>
-        </div>
-      </article>
-      <article class="step">
-        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="#bcd4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M3 20h18"/><path d="M7 20V9"/><path d="M12 20v-7"/><path d="M17 20v-4"/>
-        </svg>
-        <div>
-          <h3 class="h5">3) Scale</h3>
-          <p class="muted">Harden with MLOps, security, SLAs, and cost controls; hand off with docs and enablement.</p>
-        </div>
-      </article>
+      </div>
     </section>
 
     <section class="panel">
@@ -131,13 +86,34 @@ Response: {"score": 0.87, "explanation": {"top_features": ["x1","x5"]}}</pre>
         <li>Production-grade deployment on your Azure foundations (AKS, Functions, or App Services).</li>
         <li>Reproducible pipelines (Terraform + ADO) and clear cost ownership.</li>
       </ul>
-      <p><a class="btn cta" href="contact.html">Talk to us</a></p>
+      <p><a class="btn cta" href="#contact">Talk to us</a></p>
+    </section>
+
+    <!-- CONTACT PANEL -->
+    <section class="panel" id="contact">
+      <h2 class="h5">Send a message</h2>
+      <form action="https://formspree.io/f/yourID" method="POST" class="contact-form" data-ajax>
+        <div class="row">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="_replyto" placeholder="Email" required>
+        </div>
+        <textarea name="message" placeholder="How can we help?" required></textarea>
+        <input type="hidden" name="context" value="AI/ML">
+        <button type="submit" class="btn">Send Message</button>
+        <div class="notice ok hidden">Thanks! We’ll reply to your email.</div>
+        <div class="notice err hidden">Hmm, couldn’t send. Email us at
+          <a href="mailto:connect@hazecrafttech.com">connect@hazecrafttech.com</a>.
+        </div>
+      </form>
+      <p class="micro muted" style="margin-top:8px">
+        Prefer email? <a href="mailto:connect@hazecrafttech.com">connect@hazecrafttech.com</a>
+      </p>
     </section>
   </main>
 
   <footer class="footer">
     <span class="muted">© <span id="year"></span> HazeCraft Tech Inc.</span>
-    <a href="mailto:demo@hazecrafttech.com" class="muted">demo@hazecrafttech.com</a>
+    <a href="mailto:connect@hazecrafttech.com" class="muted">connect@hazecrafttech.com</a>
   </footer>
 
   <script src="assets/app.js"></script>
