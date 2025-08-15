@@ -29,3 +29,19 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
+
+// copy-to-clipboard for code blocks
+document.querySelectorAll('[data-copy]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const sel = btn.getAttribute('data-copy');
+    const el = document.querySelector(sel);
+    if (!el) return;
+    const text = el.textContent;
+    navigator.clipboard.writeText(text).then(() => {
+      const prev = btn.textContent;
+      btn.textContent = 'Copied!';
+      setTimeout(() => (btn.textContent = prev), 1200);
+    });
+  });
+});
+
