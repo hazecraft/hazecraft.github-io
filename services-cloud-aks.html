@@ -10,10 +10,12 @@
 <body>
   <header class="nav">
     <a class="brand" href="index.html" aria-label="HazeCraft home">
-      <!-- same brand SVG as homepage -->
       <svg class="logo" width="40" height="40" viewBox="0 0 48 48" role="img" aria-label="HazeCraft">
         <defs><linearGradient id="grad-hc" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#60a5fa"/><stop offset="100%" stop-color="#818cf8"/></linearGradient></defs>
-        <rect x="2.5" y="2.5" width="43" height="43" rx="12" fill="url(#grad-hc)"/><circle cx="17" cy="24" r="6.5" fill="#0b1020" opacity=".95"/><rect x="25" y="17" width="6" height="14" rx="3" fill="#0b1020" opacity=".95"/><rect x="33.5" y="20.5" width="5" height="8" rx="2.5" fill="#9FE1C8" opacity=".95"/>
+        <rect x="2.5" y="2.5" width="43" height="43" rx="12" fill="url(#grad-hc)"/>
+        <circle cx="17" cy="24" r="6.5" fill="#0b1020" opacity=".95"/>
+        <rect x="25" y="17" width="6" height="14" rx="3" fill="#0b1020" opacity=".95"/>
+        <rect x="33.5" y="20.5" width="5" height="8" rx="2.5" fill="#9FE1C8" opacity=".95"/>
       </svg>
       <div class="brandtext"><span class="brandname">HazeCraft Tech</span><span class="tagline">Cloud · AI · Media</span></div>
     </a>
@@ -22,7 +24,7 @@
       <a class="active" href="services-cloud-aks.html">Cloud & AKS</a>
       <a href="services-ai.html">AI/ML</a>
       <a href="products/smartskips/">SmartSkips</a>
-      <a href="contact.html" class="btn">Contact</a>
+      <a href="#contact" class="btn">Contact</a>
     </nav>
   </header>
 
@@ -41,14 +43,12 @@
     <section class="panel">
       <h2 class="h4">Outcomes</h2>
       <p class="muted">A secure, automated platform your teams can ship on — with docs and handover.</p>
-      <p><a class="btn" href="contact.html">Discuss your environment</a></p>
+      <p><a class="btn" href="#contact">Discuss your environment</a></p>
     </section>
-  </main>
 
-  <footer class="footer">
-    <span class="muted">© <span id="year"></span> HazeCraft Tech Inc.</span>
-    <a href="mailto:demo@hazecrafttech.com" class="muted">demo@hazecrafttech.com</a>
-  </footer>
-  <script src="assets/app.js"></script>
-</body>
-</html>
+    <!-- CONTACT PANEL -->
+    <section class="panel" id="contact">
+      <h2 class="h5">Send a message</h2>
+      <form action="https://formspree.io/f/yourID" method="POST" class="contact-form" data-ajax>
+        <div class="row">
+          <input type="text" name="name" plac
